@@ -4,11 +4,12 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
+import "./app.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Top text="The start of something wonderful" />
+    <div className="app">
+      <Top />
       <div className="sections">
         <Intro />
         <Portfolio />
