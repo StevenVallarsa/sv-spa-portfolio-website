@@ -1,8 +1,8 @@
 import "./top.scss";
 
-export default function Top(props) {
+export default function Top({ menuOpen, setMenuOpen }) {
   return (
-    <div className="top">
+    <div className={"top " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <h4>**** STEVEN VALLARSA 4.0 ****</h4>
@@ -12,10 +12,11 @@ export default function Top(props) {
         </div>
         {/* <div className="center"></div> */}
         <div className="right">
-          <p>Wild E. Coyote</p>
-          <p>
-            <span>GENIUS</span>
-          </p>
+          <div onClick={() => setMenuOpen(!menuOpen)} className="hamburger">
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
         </div>
       </div>
     </div>
