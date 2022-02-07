@@ -1,4 +1,32 @@
+@import "../../global.scss";
+
 .portfolio {
-    background-color: #7f7;
-    padding: 20px;
+  background-color: #5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+
+  h1 {
+    font-size: 50px;
   }
+
+  ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      font-size: 16px;
+      margin-right: 25px;
+      padding: 7px;
+      border-radius: 7px;;
+
+      &.active {
+        background-color: $petScreenGreen;
+        color: #5f5;
+      }
+    }
+  }
+}

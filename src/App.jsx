@@ -14,11 +14,11 @@ function App() {
   return (
     <div className="app">
       <Top menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
-        <Portfolio />
         <Works />
+        <Portfolio />
         <Testimonials />
         <Contact />
       </div>

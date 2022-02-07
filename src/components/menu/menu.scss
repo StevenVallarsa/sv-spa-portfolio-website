@@ -7,10 +7,40 @@
   color: $petGreen;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -300px;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 1s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+    color: $petGreen;
+    width: 60%;
+
+    li {
+      margin-bottom: 25px;
+      a {
+        font-size: inherit;
+        color: inherit;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-decoration: none;
+
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
