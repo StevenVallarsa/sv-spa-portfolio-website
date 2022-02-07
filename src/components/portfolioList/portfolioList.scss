@@ -1,0 +1,14 @@
+@import "../../global.scss";
+
+  li {
+      font-size: 16px;
+      margin-right: 25px;
+      padding: 7px;
+      border-radius: 7px;;
+      cursor: pointer;
+
+      &.active {
+        background-color: $petScreenGreen;
+        color: #5f5;
+      }
+  }

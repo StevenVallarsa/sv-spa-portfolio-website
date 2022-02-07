@@ -9,24 +9,70 @@
 
   h1 {
     font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: 900;
   }
 
   ul {
-    margin: 10px;
-    padding: 0;
+    margin: 20px;
+    padding: 0 20px;
     list-style: none;
     display: flex;
 
-    li {
-      font-size: 16px;
-      margin-right: 25px;
-      padding: 7px;
-      border-radius: 7px;;
+    // li {
+    //   font-size: 16px;
+    //   margin-right: 25px;
+    //   padding: 7px;
+    //   border-radius: 7px;;
 
-      &.active {
-        background-color: $petScreenGreen;
+    //   &.active {
+    //     background-color: $petScreenGreen;
+    //     color: #5f5;
+    //   }
+    // }
+  }
+
+  .container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    // position: relative;
+    margin-top: 20px;
+    // overflow: hidden;
+
+    .item {
+      margin: 10px 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      position: relative;
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      h3 {
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
         color: #5f5;
+        font-weight: 300;
+      }
+      img {
+        height: 100%;
+        object-fit:cover;
+        z-index: 1;
+      }
+
+      &:hover {
+        background-color: $petScreenGreen;
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
       }
     }
+
   }
 }
