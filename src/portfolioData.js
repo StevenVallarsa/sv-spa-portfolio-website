@@ -1,0 +1,51 @@
+export const portfolioItems = [
+  {
+    id: 1,
+    category: ["featured", "webApp"],
+    title: "Superhero Sighting App",
+    tech: "Java + Spring Boot + Thymeleaf + SQL",
+    img: "assets/super_sighting_thumb.jpg",
+  },
+  {
+    id: 2,
+    category: ["featured", "website"],
+    title: "NuCamp",
+    tech: "HTML + CSS + JavaScript + Bootstrap",
+    img: "assets/NuCampThumbnail.jpg",
+  },
+  {
+    id: 3,
+    category: ["website"],
+    title: "Farview Farms Website",
+    tech: "HTML",
+    img: "assets/farview_farms_preview.jpg",
+  },
+  {
+    id: 4,
+    category: ["mobileApp"],
+    title: "NuCamp Mobile App",
+    tech: "React<br />Native<br />Expo",
+    img: "assets/nucamp_mobile.jpg",
+  },
+  {
+    id: 5,
+    category: ["featured", "mobileApp"],
+    title: "The Dad App",
+    tech: "React Native + Expo",
+    img: "assets/dad_app_thumb.jpg",
+  },
+  {
+    id: 6,
+    category: ["otherThing"],
+    title: "My Old Motorcycle",
+    tech: "2011 Husqvarna TE250",
+    img: "assets/steve_on_motorcycle.jpg",
+  },
+  {
+    id: 7,
+    category: ["otherThing"],
+    title: "Let's go to Kilarney for the day",
+    tech: "Kilarney Provincial Park",
+    img: "assets/kilarney_park.jpg",
+  },
+];
