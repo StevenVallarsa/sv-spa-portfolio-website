@@ -1,11 +1,29 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: #5f5;
+  background-color: yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
+  position: relative;
+
+    a {
+      position: absolute;
+      bottom: 10px;
+    }
+    .blink {
+      animation: arrowBlink 1.5s infinite;
+    }
+
+    @keyframes arrowBlink {
+      25% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }    
 
   h1 {
     font-size: 50px;
@@ -13,41 +31,34 @@
     font-weight: 900;
   }
 
+  h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
   ul {
     margin: 20px;
-    padding: 0 10px;
+    padding: 0 20px;
     list-style: none;
     display: flex;
-
-    // li {
-    //   font-size: 16px;
-    //   margin-right: 25px;
-    //   padding: 7px;
-    //   border-radius: 7px;;
-
-    //   &.active {
-    //     background-color: $petScreenGreen;
-    //     color: #5f5;
-    //   }
-    // }
+    overflow: hidden;
   }
 
   .container {
-    width: 70%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    // position: relative;
     margin-top: 20px;
-    // overflow: hidden;
+    overflow: hidden;
 
     .item {
-      margin: 10px 20px 50px;
+      margin: 10px 20px 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 150px;
+      height: 200px;
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
@@ -58,6 +69,14 @@
         text-align: center;
         color: #5f5;
         font-weight: 300;
+      }
+      p {
+        position: absolute;
+        bottom: 8px;
+        text-align: center;
+        color: #ddd;
+        font-weight: 500;
+        font-size: 10px;
       }
       img {
         height: 100%;

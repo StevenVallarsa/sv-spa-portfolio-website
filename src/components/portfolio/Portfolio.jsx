@@ -2,6 +2,7 @@ import "./portfolio.scss";
 import { useState, useEffect } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { portfolioItems } from "../../portfolioData";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -43,7 +44,8 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>What I've Done</h1>
+      <h3>A sampling of projects I've worked on</h3>
       <ul>
         {menuList.map(item => (
           <PortfolioList
@@ -59,10 +61,15 @@ export default function Portfolio() {
         {data.map(item => (
           <div className="item" key={item.id}>
             <img src={item.img} alt={item.title} />
-            <h3>{item.tech}</h3>
+            <p>{item.tech}</p>
+            <h3>{item.title}</h3>
           </div>
         ))}
       </div>
+      <a href="#testimonials" className="blink">
+        {" "}
+        <KeyboardDoubleArrowDownIcon sx={{ fontSize: 80, fill: "#030" }} />
+      </a>
     </div>
   );
 }

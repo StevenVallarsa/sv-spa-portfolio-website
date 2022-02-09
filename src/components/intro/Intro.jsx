@@ -29,7 +29,7 @@ export default function Intro() {
             And I'm... <span ref={textRef}></span>
           </h2>
         </div>
-        <a href="#portfolio" className="blink">
+        <a href="#works" className="blink">
           {" "}
           <KeyboardDoubleArrowDownIcon sx={{ fontSize: 80, fill: "#030" }} />
         </a>
