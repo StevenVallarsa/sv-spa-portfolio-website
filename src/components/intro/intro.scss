@@ -1,59 +1,95 @@
+@import "../../global.scss";
+
 .intro {
   background-color: #0f0;
-  padding: 0 20px 0 0;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.3;
-    // position: relative;
-    // align-items: center;
     overflow: hidden;
+
+    @include mobile {
+      flex: 0.5;
+    }
 
     .imageContainer {
       margin-top: 40px;
-      // width: 700px;
-      // height: 700px;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
-      // object-fit: none;
+
+      @include mobile {
+        margin-top: 10px;
+      }
 
       img {
-        height: 90%;
+        height: 70%;
+
+        @include mobile {
+          height: 250px;
+        }
       }
     }
   }
   
   .right {
-    flex: 0.7;
+    flex: .7;
     position: relative;
+
+    @include mobile {
+      flex: 0.5;
+      overflow: hidden;
+    }
 
     .wrapper {
       width: 100%;
       height: 100%;
-      padding-left: 50px;;
+      padding-left: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding-right: 20px;
+
+      @include mobile {
+        padding-left: 0;
+        padding-top: 50px;
+        justify-content: flex-start;
+      }
     }
     
     h1 {
       font-size: 60px;
       font-weight: 700;
       margin: 20px 0;
+
+      @include mobile {
+        font-size: 36px;
+        text-align: center;
+        margin: 0;
+      }
     }
 
     h2 {
       font-size: 36px;
       font-weight: 300;
 
+    @include mobile {
+      font-size: 24px;
+      text-align: center;
+    }      
+
       span {
         font-size: inherit;
         color: crimson;
         font-weight: 500;
+    
       }
 
       .ityped-cursor {
@@ -70,15 +106,14 @@
       }
     }
 
-    h3 {
-      font-size: 30px;
-      font-weight: 300;
-    }
-
     a {
       position: absolute;
       bottom: 10px;
       left: 25%;
+
+      @include mobile {
+        left: 100%      
+      }
     }
 
     .blink {
@@ -95,23 +130,17 @@
     }    
       
     .imageContainer {
-      // position: absolute;
-      // bottom: -10px;
-      // right: 20px;
       background-color: red;
       border-radius: 50%;
-      // border: 0;
       display: flex;
       align-items:flex-end;
       justify-content: center;
       float: bottom;
-      // width: 500px;
-      // object-fit: cover;
+
       
       img {
         padding: 50px;
       }
     }
-    
   }
 }

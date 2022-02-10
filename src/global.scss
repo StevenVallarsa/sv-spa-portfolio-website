@@ -1,2 +1,10 @@
 $petScreenGreen: #030;
 $petGreen: #2f2;
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content
+  }
+}

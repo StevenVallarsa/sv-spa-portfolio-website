@@ -25,8 +25,9 @@ export default function Intro() {
         <div className="wrapper">
           <h2>My name is</h2>
           <h1>Steven Vallarsa</h1>
+          <h2>And I'm . . .</h2>
           <h2>
-            And I'm... <span ref={textRef}></span>
+            <span ref={textRef}></span>
           </h2>
         </div>
         <a href="#works" className="blink">

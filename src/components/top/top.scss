@@ -16,11 +16,15 @@
     align-items: center;
     justify-content:space-between;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .right {
       font-size: 36px;
       font-weight: 700;
-      text-align: right;
-      
+      text-align: right;  
+
       .hamburger {
         width: 32px;
         height: 25px;
@@ -28,6 +32,10 @@
         flex-direction: column;
         justify-content:space-between;
         cursor: pointer;
+
+        @include mobile {
+          padding-top: 20px;
+        }
 
         span {
           width: 100%;
@@ -64,6 +72,10 @@
 
 
 .left h4, .left h2 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', sans-serif;
   line-height: 1.5em;
+
+  @include mobile {
+    font-size: 10px;
+  }
 }

@@ -10,7 +10,6 @@ export default function Top({ menuOpen, setMenuOpen }) {
           <h4>READY...</h4>
           <h2>&nbsp; ...FOR WORK</h2>
         </div>
-        {/* <div className="center"></div> */}
         <div className="right">
           <div onClick={() => setMenuOpen(!menuOpen)} className="hamburger">
             <span className="line1"></span>
