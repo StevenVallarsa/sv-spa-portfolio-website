@@ -8,7 +8,6 @@ export default function Top({ menuOpen, setMenuOpen }) {
           <h4>**** STEVEN VALLARSA 4.0 ****</h4>
           <h4>&nbsp; 15359 BYTES FREE</h4>
           <h4>READY...</h4>
-          <h2>&nbsp; ...FOR WORK</h2>
         </div>
         <div className="right">
           <div onClick={() => setMenuOpen(!menuOpen)} className="hamburger">

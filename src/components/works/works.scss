@@ -3,7 +3,7 @@
 .works {
   display: flex;
   background-color: blue;
-  padding-top: 20px;;
+  padding: 20px 0 0 20px;
 
   @include mobile {
     flex-direction: column;
@@ -22,10 +22,14 @@
       z-index: 10;
       color: white;
 
-    @include mobile {
-      padding-top: 20px;
-      font-size: 36px
-  }
+      @include mobile {
+        padding-top: 20px;
+        font-size: 36px
+      }
+    }
+    h3 {
+      color: white;
+      font-size: 12px;
 
     }
     a {

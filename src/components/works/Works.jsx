@@ -6,6 +6,10 @@ export default function Works() {
     <div className="works" id="works">
       <div className="left">
         <h1>The Computer That Sparked My Flame</h1>
+        <h3>
+          The Commodore PET with its off-white metal case, black trim, green monochrome monitor, and a whopping 15359
+          bytes free.{" "}
+        </h3>
         <a href="#portfolio" className="blink">
           {" "}
           <KeyboardDoubleArrowDownIcon sx={{ fontSize: 80, fill: "#030" }} />

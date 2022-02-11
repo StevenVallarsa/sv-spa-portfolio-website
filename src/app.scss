@@ -4,9 +4,9 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 100px);
     position: relative;
-    top: 130px;
+    top: 100px;
     scroll-behavior: smooth; // doesn't work in my Safari 15.1
     scroll-snap-type: y mandatory;
     scrollbar-width: none; // Firefox
@@ -17,7 +17,7 @@
 
     > * {
       width: 100vw;
-      height: calc(100vh - 130px);
+      height: calc(100vh - 100px);
       scroll-snap-align: start;
     }
   }
