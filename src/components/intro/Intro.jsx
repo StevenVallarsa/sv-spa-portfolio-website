@@ -11,7 +11,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 40,
-      strings: ["a Commodore PET 4016", "a little teapot", "wonderfully wacky", "the best investment you'll ever make"],
+      strings: ["a Commodore PET 4032", "a little teapot", "wonderfully wacky", "the best investment you'll ever make"],
     });
   }, []);
   return (
@@ -25,7 +25,7 @@ export default function Intro() {
         <div className="wrapper">
           <h2>My name is</h2>
           <h1>Steven Vallarsa</h1>
-          <h2>And I'm . . .</h2>
+          <h2 className="padBot">And I'm . . .</h2>
           <h2>
             <span ref={textRef}></span>
           </h2>

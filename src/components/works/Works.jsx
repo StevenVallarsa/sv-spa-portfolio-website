@@ -5,11 +5,22 @@ export default function Works() {
   return (
     <div className="works" id="works">
       <div className="left">
-        <h1>The Computer That Sparked My Flame</h1>
+        <h1>What I Know</h1>
         <h3>
-          The Commodore PET with its off-white metal case, black trim, green monochrome monitor, and a whopping 15359
-          bytes free.{" "}
+          I've come a long with from my first encounter with "modern" computing and the Commodore PET in September 1981.
         </h3>
+        <h4>
+          <span>FRONT END</span>HTML • CSS • JavaScript • jQuery • Bootstrap • React • Reactstrap • Redux
+        </h4>
+        <h4>
+          <span>BACK END</span>Java • C# • .NET • NodeJS • ExpressJS • SQL • MongoDB • GraphQL • Apollo
+        </h4>
+        <h4>
+          <span>MOBILE</span>React Native
+        </h4>
+        <h4>
+          <span>MORE</span>Git + Visual Studio + VS Code + Netbeans
+        </h4>
         <a href="#portfolio" className="blink">
           {" "}
           <KeyboardDoubleArrowDownIcon sx={{ fontSize: 80, fill: "#030" }} />

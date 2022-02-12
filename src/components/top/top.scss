@@ -16,9 +16,10 @@
     align-items: center;
     justify-content:space-between;
 
-    // @include mobile {
-    //   flex-direction: column;
-    // }
+    @include mobileTop {
+      padding-right: 20px;
+      padding-top: 23px;
+    }
 
     .right {
       font-size: 36px;
@@ -46,6 +47,30 @@
         }
       }
     }
+
+    .left {
+      @include mobileTop {
+        font-size: 12px;
+      }
+      h4 {
+        font-family: 'Press Start 2P', sans-serif;
+        line-height: 1.5em;
+      }
+
+      .smallText {
+        display: none;
+        @include mobileTop {
+          display: inline;
+        }
+      }
+
+      .bigText {
+        display: inline;
+        @include mobileTop {
+          display: none;
+        }
+      }
+    }
   }
   
   &.active {
@@ -67,15 +92,5 @@
         }
       }
     }
-  }
-}
-
-
-.left h4, .left h2 {
-  font-family: 'Press Start 2P', sans-serif;
-  line-height: 1.5em;
-
-  @include mobile {
-    font-size: 10px;;
   }
 }

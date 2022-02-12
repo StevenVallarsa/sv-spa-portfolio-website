@@ -46,6 +46,7 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>What I've Done</h1>
       <h3>A sampling of projects I've worked on</h3>
+      <h4>Sorry, no clicky-clicky yet</h4>
       <ul>
         {menuList.map(item => (
           <PortfolioList

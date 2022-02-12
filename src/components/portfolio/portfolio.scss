@@ -8,40 +8,60 @@
   padding-top: 20px;
   position: relative;
 
-    a {
-      position: absolute;
-      bottom: 10px;
-    }
-    .blink {
-      animation: arrowBlink 1.5s infinite;
-    }
+  a {
+    position: absolute;
+    bottom: 10px;
+  }
+  .blink {
+    animation: arrowBlink 1.5s infinite;
+  }
 
-    @keyframes arrowBlink {
-      25% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }    
+  @keyframes arrowBlink {
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }    
 
   h1 {
-    font-size: 50px;
+    font-size: 48px;
     letter-spacing: 1px;
     font-weight: 900;
+
+    @include mobile {
+      font-size: 36px
+    }
   }
 
   h3 {
     font-size: 24px;
     font-weight: 300;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-top: 10px;
   }
 
   ul {
-    margin: 20px;
+    margin: 10px 20px;
     padding: 0 20px;
     list-style: none;
     display: flex;
     overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      margin: 5px;
+    }
   }
 
   .container {
@@ -53,6 +73,10 @@
     margin-top: 20px;
     overflow: hidden;
 
+    @include mobile {
+      width: 100%
+    }
+
     .item {
       margin: 10px 20px 10px;
       display: flex;
@@ -62,6 +86,10 @@
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
+
+      @include mobile {
+        height: 140px;
+      }
 
       h3 {
         position: absolute;
@@ -92,6 +120,5 @@
         }
       }
     }
-
   }
 }

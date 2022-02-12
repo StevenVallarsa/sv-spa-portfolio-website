@@ -5,7 +5,8 @@ export default function Top({ menuOpen, setMenuOpen }) {
     <div className={"top " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <h4>**** STEVEN VALLARSA 4.0 ****</h4>
+          <h4 className="bigText">**** STEVEN VALLARSA 4.0 ****</h4>
+          <h4 className="smallText">* STEVEN VALLARSA 4.0 *</h4>
           <h4>&nbsp; 15359 BYTES FREE</h4>
           <h4>READY...</h4>
         </div>
