@@ -8,7 +8,6 @@
   @include mobile {
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
   }
 
   .left {
@@ -16,7 +15,7 @@
     position: relative;
 
     @include mobile {
-      flex: 0.65;
+      flex: 0.5;
       padding-right: 10px;
     }
 
@@ -97,7 +96,7 @@
     overflow: hidden;
 
     @include mobile {
-      flex: 0.35;
+      // flex: 0.5;
       padding-right: 40px;
     }
 

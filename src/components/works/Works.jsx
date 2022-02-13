@@ -21,7 +21,7 @@ export default function Works() {
         <h4>
           <span>MORE</span>Git + Visual Studio + VS Code + Netbeans
         </h4>
-        <a href="#portfolio" className="blink">
+        <a href="#testimonials" className="blink">
           {" "}
           <KeyboardDoubleArrowDownIcon sx={{ fontSize: 80, fill: "#030" }} />
         </a>

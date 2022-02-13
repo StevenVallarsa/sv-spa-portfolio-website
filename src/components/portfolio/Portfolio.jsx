@@ -46,7 +46,7 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>What I've Done</h1>
       <h3>A sampling of projects I've worked on</h3>
-      <h4>Sorry, no clicky-clicky yet</h4>
+      <h4>This is a work in progress</h4>
       <ul>
         {menuList.map(item => (
           <PortfolioList
@@ -67,7 +67,7 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <a href="#testimonials" className="blink">
+      <a href="#contact" className="blink">
         {" "}
         <KeyboardDoubleArrowDownIcon sx={{ fontSize: 80, fill: "#030" }} />
       </a>

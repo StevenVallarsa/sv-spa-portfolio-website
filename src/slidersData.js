@@ -18,7 +18,7 @@ export const slidersData = [
   {
     id: 3,
     colour: "green",
-    title: "Manufacturing",
+    title: "Manufacturing Tech",
     years: "2013 - 2017",
     tech: ["Gibben Panel Saws", "Holzmann Edgebanders", "Drill Presses", "Lithium Battery Production"],
     src: "assets/steve_in_factory.jpg",

@@ -44,7 +44,7 @@ export default function Testimonials() {
         <ArrowBackIosNewIcon sx={{ fontSize: 48, fill: "#030", transform: "scaleX(-1)" }} />
       </div>
 
-      <a href="#contact" className="blink">
+      <a href="#portfolio" className="blink">
         {" "}
         <KeyboardDoubleArrowDownIcon sx={{ fontSize: 80, fill: "#030" }} />
       </a>
